@@ -18,7 +18,7 @@ class List extends React.Component {
   render() {
     return (
       <selector className={styles.component}>
-        <Hero titleText={this.props.title} image={this.props.image} children={this.props.children} />
+        <Hero titleText={this.props.title} image={this.props.image}  />
         <div className={styles.columns}>
           <Column title="Animals"/>
           <Column title="Planets" />

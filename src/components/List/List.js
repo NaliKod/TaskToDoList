@@ -30,7 +30,7 @@ class List extends React.Component {
             key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
             title,
             icon,
-            cards:[...state.columns.cards],
+            cards,
           }
         ]
       }

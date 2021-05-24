@@ -41,7 +41,7 @@ class Column extends React.Component {
       <section className={styles.component}>
         <h3 className={styles.title}>{title}
         <span className={styles.icon}>
-          <Icon name ={this.props.name}/>
+          <Icon name ={this.props.title}/>
           </span>
           </h3>
         <div>

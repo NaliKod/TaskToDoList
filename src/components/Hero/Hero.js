@@ -6,9 +6,9 @@ import ReactHtmlParser from 'react-html-parser';
 
 class Hero extends React.Component {
   render() {
-    const hero = this.props.titleText
+    //const hero = this.props.titleText
     //src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"
-    const url = this.props.image
+    const url = this.props.image;
     //const { hero, url } = this.props;
     return (
       <header className={styles.component}>
@@ -18,7 +18,7 @@ class Hero extends React.Component {
           {this.props.children}
         </div>
       </header>
-    )
+    );
   }
 }
 

@@ -29,9 +29,9 @@ class Column extends React.Component {
           ...state.cards,
           {
             key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
-            title
-          }
-        ]
+            title,
+          },
+        ],
       }
     ));
   }
@@ -40,10 +40,10 @@ class Column extends React.Component {
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{title}
-        <span className={styles.icon}>
-          <Icon name ={this.props.title}/>
+          <span className={styles.icon}>
+            <Icon name ={this.props.title}/>
           </span>
-          </h3>
+        </h3>
         <div>
           {this.state.cards.map(({ key, ...cardProps }) => (
             <Card key={key} {...cardProps} />
@@ -53,7 +53,7 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCards(title)} />
         </div>
       </section>
-    )
+    );
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Column.scss';
 import Icon from './Icon.js';
 import PropTypes from 'prop-types';
-//import { settings } from '../../data/dataStore';
+import { settings } from '../../data/dataStore';
 import Card from '../Card/Card';
 //import Creator from '../Creator/Creator';
 
@@ -22,21 +22,10 @@ class Column extends React.Component {
     cards: this.props.cards || [],
   }
 
-  /*addCards(title) {
-    this.setState(state => (
-      {
-        cards: [
-          ...state.cards,
-          {
-            key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
-            title,
-          },
-        ],
-      }
-    ));
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
   }
-*/
-
+  
   render() {
     const { title, cards, icon } = this.props; //use in JSX only title
     return (

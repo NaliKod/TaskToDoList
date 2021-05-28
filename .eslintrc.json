@@ -47,13 +47,5 @@
       "always-multiline"
     ],
     "no-console": "off"
-  },
-  "husky": {
-  "hooks": {
-    "pre-commit": "lint-staged"
   }
-},
-"lint-staged": {
-  "src/**/*.js": "eslint"
-}
 }

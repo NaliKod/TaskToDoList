@@ -4,7 +4,7 @@ import Icon from './Icon.js';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Card from '../Card/Card';
-//import Creator from '../Creator/Creator';
+import Creator from '../Creator/Creator';
 
 class Column extends React.Component {
   //static propTypes = { //use in JSX this.props.tilte
@@ -16,6 +16,7 @@ class Column extends React.Component {
     cards: PropTypes.array,
     image: PropTypes.string,
     name: PropTypes.string,
+    addCard: PropTypes.func,
   }
 
   state = {
@@ -27,7 +28,7 @@ class Column extends React.Component {
   }
   
   render() {
-    const { title, cards, icon } = this.props; //use in JSX only title
+    const { title, cards, icon, addCard } = this.props; //use in JSX only title
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>{title}
@@ -40,10 +41,9 @@ class Column extends React.Component {
             <Card key={cardData.id} {...cardData} />
           ))}
         </div>
-        {/*
         <div className={styles.creator}>
-          <Creator text={settings.cardCreatorText} action={title => this.addCards(title)} />
-        </div>*/}
+          <Creator text={settings.cardCreatorText} action={addCard} />
+        </div>
       </section>
     );
   }

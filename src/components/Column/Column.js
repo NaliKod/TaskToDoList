@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Column.scss';
-import Icon from './Icon.js';
+import Icon from '../Icon/Icon';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Card from '../Card/Card';

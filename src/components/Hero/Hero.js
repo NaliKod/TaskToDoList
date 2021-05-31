@@ -24,5 +24,7 @@ class Hero extends React.Component {
 
 Hero.propTypes = {
   titleText: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  image: PropTypes.node,
 };
 export default Hero;

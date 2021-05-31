@@ -17,6 +17,7 @@ class Column extends React.Component {
     image: PropTypes.string,
     name: PropTypes.string,
     addCard: PropTypes.func,
+    icon: PropTypes.node,
   }
 
   state = {

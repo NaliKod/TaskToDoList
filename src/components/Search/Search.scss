@@ -3,7 +3,7 @@
 .component {
   width: 100%;
   display: flex;
-}
+
 
   input {
     //flex-grow: 1;
@@ -15,5 +15,5 @@
     font-family: $font-text;
     border-radius: $radius;
   }
-
+}
 

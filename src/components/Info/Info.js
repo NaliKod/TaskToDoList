@@ -1,13 +1,13 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
-import { settings } from '../../data/dataStore';
+import { InfoData } from '../../data/dataStore';
 
 const Info = () => (
   <Container>
-    <Hero titleText={settings.info.title} image={settings.info.url}/>
-    <h2>{settings.info.title}</h2>
-    <p>{settings.info.description}</p>
+    <Hero titleText={InfoData.info.title} image={InfoData.info.url}/>
+    <h2>{InfoData.info.title}</h2>
+    <p>{InfoData.info.description}</p>
   </Container>
 );
 

@@ -45,8 +45,9 @@ class Search extends React.Component {
     const {value} = this.state;
     const {icon} = settings.search;
     return (
-      <Container>
+      <Container className={styles.component}>
         <input
+          className={styles.input}
           type='text'
           placeholder={text}
           value={value}

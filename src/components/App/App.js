@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../Home/Home';
+import Home from '../Home/HomeContainer';
 import Info from '../Info/Info';
 import {BrowserRouter, Route} from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';

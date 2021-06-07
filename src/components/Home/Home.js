@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Home.scss';
 import PropTypes from 'prop-types';
-//import List from '../List/List';
 import List from '../List/ListContainer';
+//import ListLink from '../ListLink/ListLink';
 //import { pageContents, listData } from '../../data/dataStore';
 import Search from '../Search/SearchContainer';
 

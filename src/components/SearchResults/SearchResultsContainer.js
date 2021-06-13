@@ -10,7 +10,7 @@ const mapStateToProps = (state, props) => {
 
   return {
     ...cardParams,
-    cards: getCardsForSearchResults(state, props.phrase),
+    cards: getCardsForSearchResults(state, phrase),
   };
 };
 

@@ -9,13 +9,13 @@ import Card from '../Card/Card';
 class SearchResults extends React.Component {
   
     static propTypes = {
-      title: PropTypes.node.isRequired,
+      //title: PropTypes.node.isRequired,
       description: PropTypes.node,
       cards: PropTypes.array,
       image: PropTypes.string,
       name: PropTypes.string,
       addCard: PropTypes.func,
-      icon: PropTypes.node,
+      //icon: PropTypes.node,
     }
   
     state = {
@@ -27,14 +27,15 @@ class SearchResults extends React.Component {
     }
     
     render() {
-      const { title, cards, icon} = this.props;
+      //const { title, cards, icon} = this.props;
+      const { cards} = this.props;
       return (
         <section className={styles.component}>
-          <h3 className={styles.title}>{title}
+          {/* <h3 className={styles.title}>{title}
             <span className={styles.icon}>
               <Icon name={icon} />
             </span>
-          </h3>
+      </h3>*/}
           <div className={styles.cards}>
             {cards.map(cardData => (
               <Card key={cardData.id} {...cardData} />
